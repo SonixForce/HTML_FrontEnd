@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Pastelería UwU</title>
+    <style>
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(76, 36, 59);
+            background-color: rgb(245, 166, 230);
+        }
+        table, td, th {
+            border: 3px solid rgb(184, 74, 98);
+            text-align: center;
+            position: relative;
+        }
+        th{
+            background-color: rgb(84, 69, 127);
+            color: white;
+        }
+        .centerIMG{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+        }
+
+        .centerTab{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .formu{
+            font-size: 25px;
+        }
+        .text{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+        }
+        .textdesc{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../HTML/Images/Logo.png" alt="Pastelería UwU"  class="centerIMG">
+    <h1 style="text-align: center; color: rgb(84, 69, 127); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">¡Bienvenido a Pastelería UwU!</h1>
+
+    <h3>Por favor seleccione el saber del pastel de su preferencia:</h3>
+
+    <table class="centerTab">
+        <tr>
+            <th id="cho">Pastel de chocolate</th>
+            <th id="vai">Pastel de vainilla</th>
+            <th id="caj">Pastel de cajeta</th>
+            <th id="cum">Pastel de cumple años</th>
+        </tr>
+        <tr>
+            <td headers="cho"><img src="../HTML/Images/chocolate.png" alt="Pastel de chocolate" width="400" height="280"></td>
+            <td headers="vai"><img src="../HTML/Images/vainilla.png" alt="Pastel de vainilla" width="400" height="280"></td>
+            <td headers="caj"><img src="../HTML/Images/Cajeta.png" alt="Pastel de cajeta" width="400" height="280"></td>
+            <td headers="cum"><img src="../HTML/Images/Pastel de cumpleaños.png" alt="Pastel de cumple años" width="400" height="280"></td>
+        </tr>
+        <tr>
+            <td>$150</td>
+            <td>$130</td>
+            <td>$200</td>
+            <td>$200</td>
+        </tr>
+    </table>
+
+    <h3>Por favor seleccione el topping:</h3>
+
+    <table class="centerTab">
+        <tr>
+            <th id="fru">Fruta</th>
+            <th id="caCho">Trozos de chocolate</th>
+            <th id="Cha">Chantilly</th>
+        </tr>
+        <tr>
+            <td headers="fru"><img src="../HTML/Images/fruta.png" alt="Fruta" width="400" height="280"></td>
+            <td headers="caCho"><img src="../HTML/Images/trozos de chocolate.png" alt="Trozos de chocolate" width="400" height="280"></td>
+            <td headers="Cha"><img src="../HTML/Images/chantilly.jpg" alt="Chantilly" width="400" height="280"></td>
+        </tr>
+        <tr>
+            <td>$20-$50</td>
+            <td>$30</td>
+            <td>$10</td>
+        </tr>
+    </table>
+
+    <h3>Introduzca sus datos de contacto y la información del pedido por favor:</h3>
+
+    <form action="/Formulario.txt" target="_blank" style="border: 3px solid rgb(184, 74, 98);" class="formu" method="post">
+        <label for="fname">Nombre(s):</label>
+        <input type="text" id="fname" name="fname" class="text"><br>
+        <label for="lname">Apellidos:</label>
+        <input type="text" id="lname" name="lname" class="text"><br>
+        <label for="phone">Telefono:</label>
+        <input type="text" id="phone" name="phone" class="text"><br>
+        <label for="mail">Correo electronico:</label>
+        <input type="email" id="mail" name="mail" class="text"><br>
+        <label for="desc">Descripción de su pedido:</label>
+        <input type="textarea" name="desc" id="desc" class="textdesc" maxlength="300"><br>
+        <label>Sabor del pastel:</label><br>
+        <label for="cho">Chocolate</label>
+        <input type="radio" name="flavour" id="cho"><br>
+        <label for="vai">Vainilla</label>
+        <input type="radio" name="flavour" id="vai"><br>
+        <label for="caj">Cajeta</label>
+        <input type="radio" name="flavour" id="caj"><br>
+        <label for="cum">Cumpleaños</label>
+        <input type="radio" name="flavour" id="cum"><br>
+        <label>Topping:</label><br>
+        <label for="fru">Fruta</label>
+        <input type="radio" name="topping" id="fru"><br>
+        <label for="trCho">Trozos de chocolate</label>
+        <input type="radio" name="topping" id="trCho"><br>
+        <label for="cha">Chantilly</label>
+        <input type="radio" name="topping" id="cha"><br>
+        <input type="submit" style="height: 30px; width: 70px; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+    </form>
+</body>
